@@ -1,0 +1,41 @@
+nav.navbar, .fondo {
+  background-color: #f8a095 !important;
+}
+
+
+img{
+    width: 100%;
+
+}
+
+.text-center{
+    padding-top: 10px;
+}
+
+div.title{
+    padding-top: 8rem;
+    font-family: 'Rubik Dirt', cursive;
+    color: #F28883;
+}
+.imgperfil{
+    width: 80%;
+    height: 95%;
+    border-radius: 150px;
+    border:10px solid #AA97FC;
+    
+}
+
+.text-sombra{
+    text-shadow: 0 0 0.2em #F0124F, 0 0 0.2em #F0124F;
+    color: #f8a095;
+}
+
+.text-sombra1{
+    text-shadow: 0 0 0.2em #F0124F, 0 0 0.2em #F0124F;
+    color: white;
+}
+
+.imgcarrusel{
+    width: 40%;
+    border: 5px solid #AA97FC;
+}
