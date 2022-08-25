@@ -27,9 +27,9 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
-          <a class="nav-link text-light opacity" href="#">Sobre mí</a>
-          <a class="nav-link text-light opacity" href="#">Mi trabajo</a>
-          <a class="nav-link text-light opacity" href="#">Contacto</a>
+          <a class="nav-link text-light opacity" href="#sobre-mi">Sobre mí</a>
+          <a class="nav-link text-light opacity" href="#mi-trabajo">Mi trabajo</a>
+          <a class="nav-link text-light opacity" href="#contactame">Contacto</a>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
             <h2 class="text-center dev">Developer</h2>
             <h4 class="text-center">¡Hola!  soy  Javiera Carmona</h4>
             <div class="btn-flex pt-4">
-              <button type="button" class="btn btn-dark">CONTÁCTAME</button>
+              <a href="#contactame"><button type="button" class="btn btn-dark">CONTÁCTAME</button></a>
             </div>
           </div>
           <div class="col-md-12 col-lg-6">
@@ -52,7 +52,7 @@
         </div>
       </div>
     </header>
-    <section class="pt-4 pb-2 fondo">
+    <section class="pt-4 pb-2 fondo" id="sobre-mi">
 
       <div class="container">
         <div class="row">
@@ -78,7 +78,7 @@
       </div>
       </div>
     </section>
-    <section class="pt-5">
+    <section class="pt-5" id="mi-trabajo">
       <h2 class="text-center text-style pb-4">Mi Trabajo</h2>
       <div class="container">
         <div class="row">
@@ -129,20 +129,21 @@
         </div>
       </div>
     </section>
-    <section class="form-contact pb-5 ps-5 pe-5 mt-5">
+    <form class="form-contact pb-5 ps-5 pe-5 mt-5" action="https://formspree.io/f/mqkjabyr"
+    method="POST" id="contactame">
       <h2 class="text-center pb-3 pt-3 mt-3 text-style">Contáctame</h2>
       <div class="mb-3 form-flex">
-        <input type="email" class="form-control pe-2" id="exampleFormControlInput1" placeholder="Nombre">
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono">
+        <input type="text" class="form-control pe-2" id="exampleFormControlInput1" placeholder="Nombre" name="name">
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" name="email">
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono" name="number">
       </div>
       <div class="mb-3">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje" name="message"></textarea>
       </div>
       <div class="btn-flex pt-4">
-        <button type="button" class="btn btn-dark">ENVIAR AHORA</button>
+        <button type="submit" class="btn btn-dark">ENVIAR AHORA</button>
       </div>
-    </section>
+    </form>
   </main>
   <footer class="pb-3 pt-5">
     <div class=fa-flex>
@@ -159,7 +160,6 @@
     </div>
     <p class="text-center">Javiera Carmona - Todos los derechos reservados 2022</p>
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>

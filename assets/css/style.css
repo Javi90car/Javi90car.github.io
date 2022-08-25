@@ -1,4 +1,11 @@
-nav.navbar, footer{
+nav.navbar{
+  background-color: #f8a095 !important;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+footer{
   background-color: #f8a095 !important;
 }
 
