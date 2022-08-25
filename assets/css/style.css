@@ -1,41 +1,127 @@
-nav.navbar, .fondo {
+nav.navbar, footer{
   background-color: #f8a095 !important;
 }
 
-
-img{
-    width: 100%;
-
+.fondo{
+  background-color: #b8b4b3;
 }
 
-.text-center{
-    padding-top: 10px;
+.form-contact{
+    background: rgba(0, 0, 0, 0.7)  url(https://img.freepik.com/fotos-premium/codigo-programacion-resumen-antecedentes-tecnologia-desarrollador-software-script-computadora_34663-31.jpg?w=740);
+    background-blend-mode: darken;
 }
 
-div.title{
-    padding-top: 8rem;
-    font-family: 'Rubik Dirt', cursive;
-    color: #F28883;
-}
-.imgperfil{
-    width: 80%;
-    height: 95%;
-    border-radius: 150px;
-    border:10px solid #AA97FC;
-    
+
+.logo {
+  text-shadow: 0 0 0.2em #b8b4b3, 0 0 0.2em #b8b4b3;
+  color: white;
 }
 
-.text-sombra{
-    text-shadow: 0 0 0.2em #F0124F, 0 0 0.2em #F0124F;
-    color: #f8a095;
+img {
+  width: 100%;
 }
 
-.text-sombra1{
-    text-shadow: 0 0 0.2em #F0124F, 0 0 0.2em #F0124F;
+.text-center {
+  padding-top: 10px;
+}
+
+div.title {
+  padding-top: 8rem;
+  font-family: "Rubik Dirt", cursive;
+  color: #f56e61;
+}
+.imgperfil {
+  width: 80%;
+  height: 95%;
+  border-radius: 200px;
+  border: 5px solid #f8a095;
+}
+
+.text-style {
+  font-weight: 1000;
+  color: #f56e61;
+}
+
+.card{
+    width: 100% !important;
+    margin: 20px !important;
+    overflow: hidden !important;
+    box-shadow: 0px 1px 10px gray !important;
+    cursor: default !important;
+    transition: all 400ms ease !important;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px gray !important;
+    transform: translateY(-4%) !important;
+}
+
+.form-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-flex{
+    display: flex;
+    justify-content: center;
     color: white;
 }
 
-.imgcarrusel{
-    width: 40%;
-    border: 5px solid #AA97FC;
+.btn:hover{
+    background-color: #24B298 !important;
+}
+.btn{
+    border-radius: 80px !important;
+    background-color: #f56e61 !important;
+    border: none !important;
+}
+
+footer p{
+    color: white;
+    vertical-align: text-bottom;
+}
+
+.front{
+  margin: 0px;
+}
+
+.dev{
+  padding: 0;
+}
+
+.fa-flex{
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+footer a{
+  font-size: 30px;
+  text-decoration: none;
+  color: #413E3E;
+}
+
+i:hover{
+  color: #1971E8;
+  
+}
+
+.front, .dev{
+  background: linear-gradient(#f56e61, #C62FB3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  animation: text 5s linear infinite;
+  font-size: 4rem;
+}
+
+@keyframes text{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
 }
